@@ -1,0 +1,229 @@
+:root{
+    --dark: #17181E;
+    --blue: #849BEB;
+    --lightBlue: #C4D5FC;
+    --green: #25D952;
+    --light: #F0F0F1;
+    --gray: #6B6B7C;
+    --dimmedLight: #BBBBBB;
+    --content: #1E1F27;
+    --hover-color: rgba(255, 141, 141, 0.15);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark);
+    font-family: helvetica, Arial, sans-serif;
+    background-image: url(/sources/wp4259767-asphalt-9-legends-wallpapers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 418px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--light);
+        max-width: 560px;
+        gap: 24px;
+        h1{
+            font-size: 64px;
+            margin: 0%;
+            padding: 0%;
+        }
+        p{
+            font-size: 20px;
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+        }
+    }
+}
+
+#esports-container{
+    display: flex;
+    flex-direction: row;
+    .item1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    
+    .item1 img {
+        width: 100%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        object-fit: cover;
+    }
+    
+    .item1 p {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+        color: var(--light);
+        text-align: center;
+    }
+    
+    .item1 h2 {
+        margin: 0;
+        padding: 0;
+        color: var(--light);
+        max-width: 240px;
+        text-align: center; 
+    }
+    
+    .c1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    #esports-list{
+        display: flex;
+        flex-direction: row;
+        width: 1156px;
+        height: 366px;
+        margin: auto;
+        gap: 24px;
+    }
+    .esports{
+        border: 1px solid var(--gray);
+        border-radius: 16px;
+    }
+    .esports:hover{
+        border: 2px solid var(--gray);
+        box-shadow: 0 0 15px 5px var(--hover-color);
+    }
+
+    .news1, .news2, .news3, .news4{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--content);
+        .item1-1{
+            flex: 1;    
+        }
+        .item1-2{
+            flex: 1;
+        }
+    }
+}
+
+#line-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 1156px;
+    .line{
+        display: flex;
+        flex-direction: row;
+        height: 24px;
+        width: 100%;
+        background-color: var(--content);
+        border: 1px solid var(--gray);
+        border-radius: 16px;
+    }
+}
+
+#news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1156px;
+    gap: 20px;
+    padding-bottom: 200px;
+    .news {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .row {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--content);
+        padding: 10px;
+        border: 1px solid var(--dimmedLight);
+        border-radius: 5px;
+    }
+    
+    .content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .content:hover{
+        border: 2px solid var(--dimmedLight);
+        box-shadow: 0 0 15px 5px var(--hover-color);
+    }
+    
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .date,
+    .time {
+        color: var(--light);
+    }
+    
+    h2 {
+        font-size: 18px;
+        color: var(--light);
+        max-width: 568px;
+    }
+    
+    p {
+        color: var(--dimmedLight);
+        max-width: 568px;
+    }
+    
+    a {
+        color: var(--gray);
+        text-decoration: none;
+    }
+
+    img{
+        max-width: 568px;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+}

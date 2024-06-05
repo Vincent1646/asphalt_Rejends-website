@@ -1,0 +1,277 @@
+:root{
+    --dark: #17181E;
+    --blue: #849BEB;
+    --lightBlue: #C4D5FC;
+    --green: #25D952;
+    --light: #F0F0F1;
+    --gray: #6B6B7C;
+    --dimmedLight: #BBBBBB;
+    --pink: #DDC2D4;
+    --content: #1E1F27;
+    --hover-color: rgba(255, 141, 141, 0.15);
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark);
+    font-family: helvetica, Arial, sans-serif;
+    background-image: url(/sources/wp4259767-asphalt-9-legends-wallpapers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 418px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--light);
+        max-width: 560px;
+        gap: 24px;
+        h1{
+            font-size: 64px;
+            margin: 0%;
+            padding: 0%;
+        }
+        p{
+            font-size: 20px;
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+        }
+    }
+}
+
+#item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 790px;
+    width: 1156px;
+    padding-right: auto;
+    padding-left: auto;
+    .contain-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: auto;
+        gap: 24px;
+    }
+
+    h1{
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        background-color: var(--blue);
+        background:linear-gradient(to right, var(--blue), var(--pink));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p, h2{
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        background-color: var(--lightBlue);
+        background:linear-gradient(to right, var(--lightBlue), var(--dimmedLight));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .row-1{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .column1{
+            border: 1px solid var(--gray);
+            background-color: var(--content);
+            border-radius: 16px;
+        }
+        .column1:hover{
+            border: 2px solid var(--gray);
+            box-shadow: 0 0 15px 5px var(--hover-color);
+        }
+        .column1-1{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 54px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .column1-2{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 42px;
+                margin-bottom: 10px;
+            }
+            #angka{
+                font-size: 64px;
+            }
+            h2{
+                font-size: 36px;
+            }
+        }
+    }
+
+    .row-2{
+        flex: 2.5;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        .column2-1{
+            border: 1px solid var(--gray);
+            background-color: var(--content);
+            border-radius: 16px;
+            flex: 3;
+            iframe{
+                border-radius: 16px;
+                width: 100%;
+                height: 100%;  
+                object-fit: cover; 
+            }
+        }
+
+        .column2-1:hover{
+            border: 2px solid var(--gray);
+            box-shadow: 0 0 15px 5px var(--hover-color);
+        }
+        
+        .column2-2{
+            flex: 1.8;
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            .crow1{
+                border: 1px solid var(--gray);
+                background-color: var(--content);
+                border-radius: 16px;
+            }
+            .crow1:hover{
+                border: 2px solid var(--gray);
+                box-shadow: 0 0 15px 5px var(--hover-color);
+            }
+            .crow1-1{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                #co{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    #text{
+                        font-size: 128px;
+                    }       
+                }
+            }
+            .crow1-2{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 64px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+#sponsor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 790px;
+    width: 1156px;
+    padding-right: auto;
+    padding-left: auto;
+    margin-bottom: 261;
+    #item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: auto;
+        gap: 24px;
+    }
+    
+    .list-1{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 60px;
+        .itemList1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 24px;
+            img{
+                height: 100%;
+                width: 120px;
+            }
+        }
+    }
+    .list-2{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        gap: 60px;
+        .itemList1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 24px;
+            img{
+                height: 100%;
+                width: 120px;
+            }
+        }
+    }
+}

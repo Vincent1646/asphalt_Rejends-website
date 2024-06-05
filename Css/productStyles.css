@@ -1,0 +1,150 @@
+:root{
+    --dark: #17181E;
+    --blue: #849BEB;
+    --lightBlue: #C4D5FC;
+    --green: #25D952;
+    --light: #F0F0F1;
+    --gray: #6B6B7C;
+    --dimmedLight: #BBBBBB;
+    --pink: #DDC2D4;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark);
+    font-family: helvetica, Arial, sans-serif;
+    background-image: url(/sources/wp4259767-asphalt-9-legends-wallpapers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 418px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--light);
+        max-width: 560px;
+        gap: 24px;
+        h1{
+            font-size: 64px;
+            margin: 0%;
+            padding: 0%;
+        }
+        p{
+            font-size: 20px;
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+        }
+    }
+}
+
+#esports-container{
+    display: flex;
+    flex-direction: row;
+    height: 260px;
+    .item1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    
+    .item1 img {
+        width: 100%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        object-fit: cover;
+    }
+    
+    .item1 p {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+        color: var(--light);
+        text-align: center;
+    }
+    
+    .item1 h2 {
+        margin: 0;
+        padding: 0;
+        color: var(--light);
+        max-width: 240px;
+        text-align: center; 
+    }
+    
+    .c1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    #esports-list{
+        display: flex;
+        flex-direction: row;
+        width: 1156px;
+        height: 240px;
+        margin: auto;
+        gap: 24px;
+    }
+    .esports{
+        border: 1px solid var(--gray);
+        border-radius: 16px;
+    }
+    .esports:hover{
+        border: 2px solid var(--gray);
+        box-shadow: 0 0 15px 5px var(--hover-color);
+    }
+
+    .news1, .news2, .news3, .news4{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--content);
+        .item1-1{
+            flex: 1;    
+        }
+        .item1-2{
+            flex: 1;
+        }
+    }
+}
+
+#judul{
+    color: var(--light);
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 64px;
+    margin-top: 64px;
+    text-align: center;
+    background-color: var(--blue);
+    background:linear-gradient(to right, var(--blue), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#break{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}

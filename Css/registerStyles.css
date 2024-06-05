@@ -1,0 +1,256 @@
+:root{
+    --dark: #17181E;
+    --blue: #849BEB;
+    --lightBlue: #C4D5FC;
+    --green: #25D952;
+    --light: #F0F0F1;
+    --gray: #6B6B7C;
+    --dimmedLight: #BBBBBB;
+    --content: #1E1F27;
+    --box-color: rgba(35, 36, 46, 0.4);
+    --hover-color: rgba(255, 141, 141, 0.15);
+    --pink: #DDC2D4;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark);
+    font-family: helvetica, Arial, sans-serif;
+    background-image: url(/sources/wp4259767-asphalt-9-legends-wallpapers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 418px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--light);
+        max-width: 595px;
+        gap: 24px;
+        h1{
+            font-size: 64px;
+            margin: 0%;
+            padding: 0%;
+        }
+        p{
+            font-size: 20px;
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+        }
+    }
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 790px;
+    width: 1156px;
+    padding-right: auto;
+    padding-left: auto;
+    margin-bottom: 261px;
+    background-color: var(--box-color);
+    border-radius: 16px;
+    .contain-container{
+        display: flex;
+        flex-direction: row;
+        width: 1056px;
+        height: 100%;
+        padding: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 24px;
+    }
+
+    .row-1{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        .column-1{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            .crow{
+                border: 1px solid var(--gray); 
+                border-radius: 16px;
+                background-color: var(--content);
+            }
+            .crow:hover{
+                border: 2px solid var(--gray);
+                box-shadow: 0 0 15px 5px var(--hover-color);
+            }
+            .crow-1{
+                flex: 1.5;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 64px;
+                    text-align: center;
+                    background-color: var(--blue);
+                    background:linear-gradient(to right, var(--blue), var(--pink));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                
+            }
+            .crow-2{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                p{
+                    max-width: 140px;
+                    font-size: 16px;
+                    text-align: center;
+                    background-color: var(--lightBlue);
+                    background:linear-gradient(to right, var(--lightBlue), var(--pink));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        .column-2{
+            border: 1px solid var(--gray); 
+            border-radius: 16px;
+            background-color: var(--content);
+            flex: 1;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+            }
+        }
+        .column-2:hover{
+            border: 2px solid var(--gray);
+            box-shadow: 0 0 15px 5px var(--hover-color);
+        }
+    }
+
+
+    /*Form*/
+    .row-2 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row-2 .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        max-width: 600px;
+        height: 100%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px var(--gray);
+    }
+    
+    .row-2 h2 {
+        font-size: 32px;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        color: var(--light);
+    }
+    
+    .row-2 .form-group {
+        margin-bottom: 20px;
+        width: 100%;
+        .agreement-text{
+            color: var(--dimmedLight);
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    
+    .row-2 label {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--light);
+    }
+    
+    .row-2 input[type="text"],
+    .row-2 input[type="email"],
+    .row-2 input[type="date"],
+    .row-2 select {
+        width: calc(100% - 5px); 
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+        box-sizing: border-box; 
+        background-color: var(--gray);
+        color: var(--light);
+    }
+
+    .row-2 input[type="text"]:focus,
+    .row-2 input[type="email"]:focus,
+    .row-2 input[type="date"]:focus,
+    .row-2 select:focus {
+        outline: none;
+        box-shadow: 0 0 5px var(--green);
+    }
+    
+    .row-2 button[type="submit"] {
+        font-family: Helvetica;
+        font-size: 16px;
+        background-color: var(--green);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .row-2 button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    .row-2 .error-message {
+        color: #ff0000;
+        font-size: 14px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    #button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
